@@ -9,14 +9,14 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long studentid;
 	private String name;
-	private int age;
+	private Long age;
 	private String gender;
 	private String school_name;
 
 	// Constructors, getters, and setters
 	public Student() {}
 
-	public Student(String name, int age, String gender, String school_name) {
+	public Student(String name, Long age, String gender, String school_name) {
 		this.name = name;
 	    this.age = age;
 	    this.gender = gender;
@@ -35,7 +35,7 @@ public class Student {
 
 	
 
-	public int getAge() {
+	public Long getAge() {
 		return age;
 	}
 
